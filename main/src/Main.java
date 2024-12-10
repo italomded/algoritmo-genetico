@@ -23,7 +23,8 @@ public class Main {
     private static int GERACOES = 0;
 
     private static Double[] ROLETA_VICIADA;
-    private static Integer[][] MATRIZ_ADJACENCIA;
+    private static Integer[][] MATRIZ_ADJACENCIA = new Integer[VERTICES_GRAFO][VERTICES_GRAFO];
+    private static Integer[][] MATRIZ_ADJACENCIA_VIEW = new Integer[VERTICES_GRAFO][VERTICES_GRAFO];
 
     public static void main(String[] args) {
         final int ii = PESO_CAMINHO_INVALIDO;
@@ -36,6 +37,14 @@ public class Main {
         MATRIZ_ADJACENCIA[4] = new Integer[]{ii, ii, 30, ii, ii, ii};
         MATRIZ_ADJACENCIA[5] = new Integer[]{ii, ii, 20, ii, ii, ii};
 
+//        MATRIZ_ADJACENCIA_VIEW = MatrizUtils.generate(VERTICES_GRAFO, 25, 100);
+//
+//        MatrizUtils.copy(MATRIZ_ADJACENCIA, MATRIZ_ADJACENCIA_VIEW, PESO_CAMINHO_INVALIDO);
+//
+//        MatrizUtils.show(MATRIZ_ADJACENCIA);
+//        MatrizUtils.show(MATRIZ_ADJACENCIA_VIEW);
+//
+//        MatrizUtils.showGeneratedGraph(MATRIZ_ADJACENCIA_VIEW);
 
         List<List<Integer>> populacao = new ArrayList<>();
         while (populacao.size() != TAMANHO_POPULACAO_INICIAL) {
