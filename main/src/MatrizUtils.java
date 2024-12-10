@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Random;
 
 public class MatrizUtils {
-    public static Integer[][] generate(int numeroDeVertices, int distanciaMinima, int distanciaMaxima) {
+    public static Integer[][] generate(int numeroDeVertices, int distanciaMinima, int distanciaMaxima, int invalidWeight) {
         Integer[][] matriz = new Integer[numeroDeVertices][numeroDeVertices];
         Random random = new Random();
 
@@ -41,7 +41,7 @@ public class MatrizUtils {
         }
 
         for (int i = 0; i < numeroDeVertices; i++) {
-            matriz[i][i] = Integer.MAX_VALUE;
+            matriz[i][i] = invalidWeight;
         }
 
         return matriz;

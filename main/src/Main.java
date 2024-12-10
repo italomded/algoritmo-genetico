@@ -37,7 +37,8 @@ public class Main {
         MATRIZ_ADJACENCIA[4] = new Integer[]{ii, ii, 30, ii, ii, ii};
         MATRIZ_ADJACENCIA[5] = new Integer[]{ii, ii, 20, ii, ii, ii};
 
-//        MATRIZ_ADJACENCIA_VIEW = MatrizUtils.generate(VERTICES_GRAFO, 25, 100);
+        // Implementação de geração de matriz de adjacência aleatória (Não concluída, mas funcional)
+//        MATRIZ_ADJACENCIA_VIEW = MatrizUtils.generate(VERTICES_GRAFO, 10, 500, PESO_CAMINHO_INVALIDO);
 //
 //        MatrizUtils.copy(MATRIZ_ADJACENCIA, MATRIZ_ADJACENCIA_VIEW, PESO_CAMINHO_INVALIDO);
 //
